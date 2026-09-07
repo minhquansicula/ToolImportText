@@ -1,0 +1,52 @@
+{
+  "app_name": "Paper to Excel OCR",
+  "version": "1.0.0",
+  "language": "vi",
+  "workspace_dir": null,
+  "ocr_engine": "cloud_ocr",
+  "paddleocr": {
+    "lang": "vi",
+    "use_angle_cls": true,
+    "use_gpu": false,
+    "det_model_dir": null,
+    "rec_model_dir": null,
+    "cls_model_dir": null,
+    "show_log": false
+  },
+  "cloud_ocr": {
+    "provider": "openrouter",
+    "api_key": "YOUR_API_KEY_HERE",
+    "model_name": "google/gemini-3.5-flash"
+  },
+  "preprocessing_profile": "default",
+  "confidence_threshold": 0.85,
+  "server": {
+    "port": 8265,
+    "auto_start": false,
+    "bind_address": null,
+    "session_expiration_minutes": 15,
+    "max_upload_size_mb": 15,
+    "max_image_width": 8000,
+    "max_image_height": 8000,
+    "max_pixel_count": 40000000,
+    "max_uploads_per_minute": 10,
+    "max_concurrent_uploads": 3,
+    "allowed_extensions": [".jpg", ".jpeg", ".png", ".webp"],
+    "allowed_mime_types": ["image/jpeg", "image/png", "image/webp"]
+  },
+  "inbox_watcher": {
+    "stability_check_interval_seconds": 1.0,
+    "stability_check_max_attempts": 3,
+    "ignored_extensions": [".tmp", ".part", ".partial"]
+  },
+  "excel": {
+    "backup_enabled": true,
+    "backup_dir": null,
+    "verify_after_save": true
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "max_backup_count": 5
+  }
+}

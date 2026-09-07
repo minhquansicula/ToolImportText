@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi ảnh chứng từ</title>
+    <link rel="stylesheet" href="/static/mobile_capture.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Chụp / Tải ảnh lên</h2>
+        <p>Thiết bị phải dùng chung mạng Wi-Fi với máy tính.</p>
+        
+        <form id="uploadForm">
+            <div class="file-input-wrapper">
+                <label for="fileInput" class="custom-file-button">Chọn ảnh hoặc Chụp</label>
+                <input type="file" id="fileInput" accept="image/*" capture="environment" required>
+            </div>
+            
+            <div id="previewContainer" class="hidden">
+                <img id="imagePreview" src="" alt="Preview">
+            </div>
+            
+            <button type="submit" id="submitBtn" class="hidden" disabled>Gửi lên máy tính</button>
+        </form>
+        
+        <div id="statusMessage"></div>
+    </div>
+    <script>
+        const token = "{{ token }}";
+    </script>
+    <script src="/static/mobile_capture.js"></script>
+</body>
+</html>

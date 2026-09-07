@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Application configuration containing sensitive keys / tokens
+paper-to-excel-ocr-builder/config/app_config.json
+config/app_config.json
+.env
+*.env
+
+# Workspace runtime files & user uploads
+paper-to-excel-ocr-builder/workspace/
+workspace/
+*.log
+*.tmp
+*.bak
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

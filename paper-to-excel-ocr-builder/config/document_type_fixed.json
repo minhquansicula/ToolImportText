@@ -1,0 +1,93 @@
+{
+  "document_type": "fixed_form_v1",
+  "display_name": "Phiếu nhập/xuất kho",
+  "sheet_name": "Data",
+  "start_row": 2,
+  "confidence_threshold": 0.85,
+  "duplicate_key": "document_number",
+  "template_row": null,
+  "fields": {
+    "document_number": {
+      "display_name": "Mã phiếu",
+      "excel_column": "A",
+      "required": true,
+      "labels": ["Mã phiếu", "Số phiếu"],
+      "regex": "^[A-Za-z0-9_\\-/]+$",
+      "date_format": null,
+      "numeric": false,
+      "preserve_leading_zeros": false,
+      "region": {
+        "x1": 0.10,
+        "y1": 0.05,
+        "x2": 0.50,
+        "y2": 0.15
+      }
+    },
+    "document_date": {
+      "display_name": "Ngày chứng từ",
+      "excel_column": "B",
+      "required": true,
+      "labels": ["Ngày", "Ngày chứng từ"],
+      "regex": null,
+      "date_format": "dd/MM/yyyy",
+      "numeric": false,
+      "preserve_leading_zeros": false,
+      "region": null
+    },
+    "product_code": {
+      "display_name": "Mã sản phẩm",
+      "excel_column": "C",
+      "required": true,
+      "labels": ["Mã sản phẩm", "Mã hàng"],
+      "regex": null,
+      "date_format": null,
+      "numeric": false,
+      "preserve_leading_zeros": true,
+      "region": null
+    },
+    "product_name": {
+      "display_name": "Tên sản phẩm",
+      "excel_column": "D",
+      "required": false,
+      "labels": ["Tên sản phẩm", "Tên hàng"],
+      "regex": null,
+      "date_format": null,
+      "numeric": false,
+      "preserve_leading_zeros": false,
+      "region": null
+    },
+    "quantity": {
+      "display_name": "Số lượng",
+      "excel_column": "E",
+      "required": true,
+      "labels": ["Số lượng", "SL"],
+      "regex": "^\\d+([.,]\\d+)?$",
+      "date_format": null,
+      "numeric": true,
+      "preserve_leading_zeros": false,
+      "region": null
+    },
+    "unit": {
+      "display_name": "Đơn vị",
+      "excel_column": "F",
+      "required": false,
+      "labels": ["Đơn vị", "ĐVT"],
+      "regex": null,
+      "date_format": null,
+      "numeric": false,
+      "preserve_leading_zeros": false,
+      "region": null
+    },
+    "note": {
+      "display_name": "Ghi chú",
+      "excel_column": "G",
+      "required": false,
+      "labels": ["Ghi chú"],
+      "regex": null,
+      "date_format": null,
+      "numeric": false,
+      "preserve_leading_zeros": false,
+      "region": null
+    }
+  }
+}
